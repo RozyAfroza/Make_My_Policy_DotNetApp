@@ -1,0 +1,168 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="Home.Master" CodeBehind="HealthInsuarenceMedicalUI.aspx.cs" Inherits="MakeMyPolicyApp.UI.HealthInsuarenceMedicalUI" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
+</asp:Content>
+<asp:Content ContentPlaceHolderID="head" runat="server">
+
+	<script language="javascript" type="text/javascript">
+		$(document).ready(function () {
+			$(".text").hide();
+			$("#YesSurgeryRadioButton").click(function () {
+				$(".text").show();
+			});
+			$("#NoSurgeryRadioButton").click(function () {
+				$(".text").hide();
+			});
+		});
+	</script>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+
+	<div class="container big-card">
+		<div style="height: auto">
+			<div class="form-horizontal">
+
+				<div class="col-12">
+					<h1>Health Insuarence</h1>
+					<br />
+
+					<div class="row">
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label1" runat="server" Text="Marital Status :"></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="maritalStatusRadioButton" runat="server">
+									<asp:ListItem Selected="True">Single</asp:ListItem>
+									<asp:ListItem>Married</asp:ListItem>
+									<asp:ListItem>Other</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label3" runat="server" Text="Residential Situation : "></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="residentialSituationRadioButton" runat="server">
+									<asp:ListItem Selected="True">Appertment</asp:ListItem>
+									<asp:ListItem>Rental</asp:ListItem>
+									<asp:ListItem>Supported</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label2" runat="server" Text="Age :"></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="AgeRadioButton" runat="server">
+									<asp:ListItem Selected="True">20-28</asp:ListItem>
+									<asp:ListItem>29-34</asp:ListItem>
+									<asp:ListItem>35-42</asp:ListItem>
+									<asp:ListItem>43-50</asp:ListItem>
+									<asp:ListItem>50-Above</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label4" runat="server" Text="Income Range : "></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="incomeRangeRadioButton" runat="server">
+									<asp:ListItem Selected="True">25000-35000</asp:ListItem>
+									<asp:ListItem>36000-48000</asp:ListItem>
+									<asp:ListItem>49000-60000</asp:ListItem>
+									<asp:ListItem>62000-75000</asp:ListItem>
+									<asp:ListItem>75000 Above</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+					</div>
+					<br />
+
+					<h3>
+						<asp:Label CssClass="control-label" ID="Label5" runat="server" Text="Medical History : "></asp:Label></h3>
+					<br />
+
+					<div class="row">
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label9" runat="server" Text="Type of Health Care needed : "></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="healthCareNeededRadioButton" runat="server">
+									<asp:ListItem Selected="True">chronic</asp:ListItem>
+									<asp:ListItem>10 years or more</asp:ListItem>
+									<asp:ListItem>2 years or more</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label10" runat="server" Text="How many doctor you want to include new plan : "></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="howManyDoctorYouWantRadioButton" runat="server">
+									<asp:ListItem Selected="True">2-4</asp:ListItem>
+									<asp:ListItem>5-7</asp:ListItem>
+									<asp:ListItem>8 Above</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label12" runat="server" Text="How many Hospital should be needed : "></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="howManyHospitalNeededRadioButton" runat="server">
+									<asp:ListItem Selected="True">2-4</asp:ListItem>
+									<asp:ListItem>5-7</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+						<div class="form-group col-6">
+							<asp:Label CssClass="control-label" ID="Label11" runat="server" Text="Single Health Care or Family : "></asp:Label>
+							<div class="col-12">
+								<asp:RadioButtonList ID="singleHealthCareRadioButton" runat="server">
+									<asp:ListItem Selected="True">Single</asp:ListItem>
+									<asp:ListItem>Family</asp:ListItem>
+								</asp:RadioButtonList>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-5">
+							<asp:Label CssClass="control-label" ID="Label6" runat="server" Text="Previously treated surgery:"></asp:Label>
+
+							<div class="col-12">
+								<input type="radio" name="radio1" id="YesSurgeryRadioButton" runat="server" clientidmode="Static" value="Yes" />Yes
+						<br />
+								<input type="radio" name="radio1" id="NoSurgeryRadioButton" runat="server" clientidmode="Static" value="No" checked="True" />No
+         
+							</div>
+						</div>
+						<div class="form-group col-7">
+							<div class="text">
+								<div class="col-12">
+									<asp:Label CssClass="control-label" ID="Label7" runat="server" Text="How many time surgery : "></asp:Label>
+								</div>
+								<div class="col-12">
+									<asp:TextBox CssClass="form-control" ID="howManyTimeSurgeryTextBox" runat="server" Width="297px"></asp:TextBox>
+								</div>
+
+								<div class="col-12">
+									<asp:Label CssClass="control-label" ID="Label8" runat="server" Text="Total Expence Per Year : "></asp:Label>
+								</div>
+								<div class="col-12">
+									<asp:TextBox CssClass="form-control" ID="totalExpencePerYearTextBox" runat="server" Width="297px"></asp:TextBox>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<br/>
+					<div class="row">
+						<div class="col-5"></div>
+						<asp:Button ID="submitButton" CssClass="btn btn-primary" runat="server" Text="Submit" OnClick="submitButton_Click" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</asp:Content>

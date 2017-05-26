@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF3A8ED3-1EB7-4D29-8A2A-80D8A891677C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MakeMyPolicyApp</RootNamespace>
+    <AssemblyName>MakeMyPolicyApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Banner.jpg" />
+    <Content Include="Contents\Banner2.jpg" />
+    <Content Include="Contents\Banner3.jpg" />
+    <Content Include="Contents\Banner4.jpg" />
+    <Content Include="Contents\Banner5.jpg" />
+    <Content Include="Contents\Banner6.jpg" />
+    <Content Include="Contents\helpline_icon.png" />
+    <Content Include="Contents\insurance.jpg" />
+    <Content Include="Contents\lifeinsurance.jpg" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CSS.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Contents\policy-4.jpg" />
+    <Content Include="Contents\Policy2-header.jpg" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\icheck.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\SCRIPT.js" />
+    <Content Include="skins\all.css" />
+    <Content Include="skins\flat\aero%402x.png" />
+    <Content Include="skins\flat\aero.css" />
+    <Content Include="skins\flat\aero.png" />
+    <Content Include="skins\flat\blue%402x.png" />
+    <Content Include="skins\flat\blue.css" />
+    <Content Include="skins\flat\blue.png" />
+    <Content Include="skins\flat\flat%402x.png" />
+    <Content Include="skins\flat\flat.css" />
+    <Content Include="skins\flat\flat.png" />
+    <Content Include="skins\flat\green%402x.png" />
+    <Content Include="skins\flat\green.css" />
+    <Content Include="skins\flat\green.png" />
+    <Content Include="skins\flat\grey%402x.png" />
+    <Content Include="skins\flat\grey.css" />
+    <Content Include="skins\flat\grey.png" />
+    <Content Include="skins\flat\orange%402x.png" />
+    <Content Include="skins\flat\orange.css" />
+    <Content Include="skins\flat\orange.png" />
+    <Content Include="skins\flat\pink%402x.png" />
+    <Content Include="skins\flat\pink.css" />
+    <Content Include="skins\flat\pink.png" />
+    <Content Include="skins\flat\purple%402x.png" />
+    <Content Include="skins\flat\purple.css" />
+    <Content Include="skins\flat\purple.png" />
+    <Content Include="skins\flat\red%402x.png" />
+    <Content Include="skins\flat\red.css" />
+    <Content Include="skins\flat\red.png" />
+    <Content Include="skins\flat\yellow%402x.png" />
+    <Content Include="skins\flat\yellow.css" />
+    <Content Include="skins\flat\yellow.png" />
+    <Content Include="skins\flat\_all.css" />
+    <Content Include="skins\futurico\futurico%402x.png" />
+    <Content Include="skins\futurico\futurico.css" />
+    <Content Include="skins\futurico\futurico.png" />
+    <Content Include="skins\line\aero.css" />
+    <Content Include="skins\line\blue.css" />
+    <Content Include="skins\line\green.css" />
+    <Content Include="skins\line\grey.css" />
+    <Content Include="skins\line\line%402x.png" />
+    <Content Include="skins\line\line.css" />
+    <Content Include="skins\line\line.png" />
+    <Content Include="skins\line\orange.css" />
+    <Content Include="skins\line\pink.css" />
+    <Content Include="skins\line\purple.css" />
+    <Content Include="skins\line\red.css" />
+    <Content Include="skins\line\yellow.css" />
+    <Content Include="skins\line\_all.css" />
+    <Content Include="skins\minimal\aero%402x.png" />
+    <Content Include="skins\minimal\aero.css" />
+    <Content Include="skins\minimal\aero.png" />
+    <Content Include="skins\minimal\blue%402x.png" />
+    <Content Include="skins\minimal\blue.css" />
+    <Content Include="skins\minimal\blue.png" />
+    <Content Include="skins\minimal\green%402x.png" />
+    <Content Include="skins\minimal\green.css" />
+    <Content Include="skins\minimal\green.png" />
+    <Content Include="skins\minimal\grey%402x.png" />
+    <Content Include="skins\minimal\grey.css" />
+    <Content Include="skins\minimal\grey.png" />
+    <Content Include="skins\minimal\minimal%402x.png" />
+    <Content Include="skins\minimal\minimal.css" />
+    <Content Include="skins\minimal\minimal.png" />
+    <Content Include="skins\minimal\orange%402x.png" />
+    <Content Include="skins\minimal\orange.css" />
+    <Content Include="skins\minimal\orange.png" />
+    <Content Include="skins\minimal\pink%402x.png" />
+    <Content Include="skins\minimal\pink.css" />
+    <Content Include="skins\minimal\pink.png" />
+    <Content Include="skins\minimal\purple%402x.png" />
+    <Content Include="skins\minimal\purple.css" />
+    <Content Include="skins\minimal\purple.png" />
+    <Content Include="skins\minimal\red%402x.png" />
+    <Content Include="skins\minimal\red.css" />
+    <Content Include="skins\minimal\red.png" />
+    <Content Include="skins\minimal\yellow%402x.png" />
+    <Content Include="skins\minimal\yellow.css" />
+    <Content Include="skins\minimal\yellow.png" />
+    <Content Include="skins\minimal\_all.css" />
+    <Content Include="skins\polaris\polaris%402x.png" />
+    <Content Include="skins\polaris\polaris.css" />
+    <Content Include="skins\polaris\polaris.png" />
+    <Content Include="skins\square\aero%402x.png" />
+    <Content Include="skins\square\aero.css" />
+    <Content Include="skins\square\aero.png" />
+    <Content Include="skins\square\blue%402x.png" />
+    <Content Include="skins\square\blue.css" />
+    <Content Include="skins\square\blue.png" />
+    <Content Include="skins\square\green%402x.png" />
+    <Content Include="skins\square\green.css" />
+    <Content Include="skins\square\green.png" />
+    <Content Include="skins\square\grey%402x.png" />
+    <Content Include="skins\square\grey.css" />
+    <Content Include="skins\square\grey.png" />
+    <Content Include="skins\square\orange%402x.png" />
+    <Content Include="skins\square\orange.css" />
+    <Content Include="skins\square\orange.png" />
+    <Content Include="skins\square\pink%402x.png" />
+    <Content Include="skins\square\pink.css" />
+    <Content Include="skins\square\pink.png" />
+    <Content Include="skins\square\purple%402x.png" />
+    <Content Include="skins\square\purple.css" />
+    <Content Include="skins\square\purple.png" />
+    <Content Include="skins\square\red%402x.png" />
+    <Content Include="skins\square\red.css" />
+    <Content Include="skins\square\red.png" />
+    <Content Include="skins\square\square%402x.png" />
+    <Content Include="skins\square\square.css" />
+    <Content Include="skins\square\square.png" />
+    <Content Include="skins\square\yellow%402x.png" />
+    <Content Include="skins\square\yellow.css" />
+    <Content Include="skins\square\yellow.png" />
+    <Content Include="skins\square\_all.css" />
+    <Content Include="UI\AboutUs.aspx" />
+    <Content Include="UI\AgentMessageListUI.aspx" />
+    <Content Include="UI\BusinessInsuranceUI.aspx" />
+    <Content Include="UI\ChatWithUserUI.aspx" />
+    <Content Include="UI\FAQ.aspx" />
+    <Content Include="UI\FindAgentMessageUI.aspx" />
+    <Content Include="UI\CustomerCareUI.aspx" />
+    <Content Include="UI\FindAgentManagerAuthenticator.aspx" />
+    <Content Include="UI\FindAgentUI.aspx" />
+    <Content Include="UI\Home.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\Policy_blocks.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="UI\AssetsInsuranceUI.aspx" />
+    <Content Include="UI\HealthInsuranceUI.aspx" />
+    <Content Include="UI\HomeInsuranceUI.aspx" />
+    <Content Include="UI\HomeUI.aspx" />
+    <Content Include="UI\MakePaymentEmail.aspx" />
+    <Content Include="UI\MakePaymentUI.aspx" />
+    <Content Include="UI\PremiumTypeUI.aspx" />
+    <Content Include="UI\SignupUI.aspx" />
+    <Content Include="UI\DefaultContent.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ChatManager.cs" />
+    <Compile Include="BLL\ChatReplayManager.cs" />
+    <Compile Include="BLL\FaqManager.cs" />
+    <Compile Include="BLL\HealthInsuarenceManager.cs" />
+    <Compile Include="BLL\SignupManager.cs" />
+    <Compile Include="DAL\ChatGateway.cs" />
+    <Compile Include="DAL\ChatReplayGateway.cs" />
+    <Compile Include="DAL\FaqGateway.cs" />
+    <Compile Include="DAL\HealthInsuarenceGateway.cs" />
+    <Compile Include="DAL\SignupGateway.cs" />
+    <Compile Include="ModelClass\ChatModel.cs" />
+    <Compile Include="ModelClass\ChatReplayStatus.cs" />
+    <Compile Include="ModelClass\FaqCommentModel.cs" />
+    <Compile Include="ModelClass\HealthInsuarence.cs" />
+    <Compile Include="ModelClass\LoginAction.cs" />
+    <Compile Include="ModelClass\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AgentMessageListUI.aspx.cs">
+      <DependentUpon>AgentMessageListUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AgentMessageListUI.aspx.designer.cs">
+      <DependentUpon>AgentMessageListUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AssetsInsuranceUI.aspx.cs">
+      <DependentUpon>AssetsInsuranceUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AssetsInsuranceUI.aspx.designer.cs">
+      <DependentUpon>AssetsInsuranceUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BusinessInsuranceUI.aspx.cs">
+      <DependentUpon>BusinessInsuranceUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BusinessInsuranceUI.aspx.designer.cs">
+      <DependentUpon>BusinessInsuranceUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChatWithUserUI.aspx.cs">
+      <DependentUpon>ChatWithUserUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ChatWithUserUI.aspx.designer.cs">
+      <DependentUpon>ChatWithUserUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FindAgentMessageUI.aspx.cs">
+      <DependentUpon>FindAgentMessageUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FindAgentMessageUI.aspx.designer.cs">
+      <DependentUpon>FindAgentMessageUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerCareUI.aspx.cs">
+      <DependentUpon>CustomerCareUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerCareUI.aspx.designer.cs">
+      <DependentUpon>CustomerCareUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FindAgentManagerAuthenticator.aspx.cs">
+      <DependentUpon>FindAgentManagerAuthenticator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FindAgentManagerAuthenticator.aspx.designer.cs">
+      <DependentUpon>FindAgentManagerAuthenticator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FindAgentUI.aspx.cs">
+      <DependentUpon>FindAgentUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\FindAgentUI.aspx.designer.cs">
+      <DependentUpon>FindAgentUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HealthInsuranceUI.aspx.cs">
+      <DependentUpon>HealthInsuranceUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\HealthInsuranceUI.aspx.designer.cs">
+      <DependentUpon>HealthInsuranceUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HomeInsuranceUI.aspx.cs">
+      <DependentUpon>HomeInsuranceUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\HomeInsuranceUI.aspx.designer.cs">
+      <DependentUpon>HomeInsuranceUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HomeUI.aspx.cs">
+      <DependentUpon>HomeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\HomeUI.aspx.designer.cs">
+      <DependentUpon>HomeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MakePaymentEmail.aspx.cs">
+      <DependentUpon>MakePaymentEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MakePaymentEmail.aspx.designer.cs">
+      <DependentUpon>MakePaymentEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MakePaymentUI.aspx.cs">
+      <DependentUpon>MakePaymentUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MakePaymentUI.aspx.designer.cs">
+      <DependentUpon>MakePaymentUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PremiumTypeUI.aspx.cs">
+      <DependentUpon>PremiumTypeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PremiumTypeUI.aspx.designer.cs">
+      <DependentUpon>PremiumTypeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SignupUI.aspx.cs">
+      <DependentUpon>SignupUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SignupUI.aspx.designer.cs">
+      <DependentUpon>SignupUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DefaultContent.aspx.cs">
+      <DependentUpon>DefaultContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DefaultContent.aspx.designer.cs">
+      <DependentUpon>DefaultContent.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_LocalResources\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5314</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

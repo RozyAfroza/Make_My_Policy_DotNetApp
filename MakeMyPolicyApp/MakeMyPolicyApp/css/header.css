@@ -1,0 +1,44 @@
+.header_bg{
+	background-image:url(https://mybdjobs.bdjobs.com/mybdjobs/images/images_training/header_bg.gif);
+	background-repeat:repeat-x;
+}
+.logo_bg{
+	background-image:url(https://mybdjobs.bdjobs.com/mybdjobs/images/images_training/logo_bg.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.BDJTopMenuBangla a{
+	display:block;
+	float:left;
+	font-family:verdana;
+	font-size:10px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+	padding-left:20px;
+	padding-right:20px;
+	border-right:1px solid #ffffff;
+
+}
+.BDJTopMenuBangla a:hover{
+	color:#baebff;
+}
+
+.BDJTopMenuBangla .selected{
+	display:block;
+	float:left;
+	font-family:verdana;
+	font-size:10px;
+	color:#c6ff00;
+	font-weight:bold;
+	text-decoration:none;
+	padding-left:30px;
+	padding-right:30px;
+	border-right:1px solid #ffffff;
+
+}
+.BDJTopMenuBangla .selected:hover{
+	color:#c6ff00;
+}
+
